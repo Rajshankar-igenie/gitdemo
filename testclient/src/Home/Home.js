@@ -78,7 +78,6 @@ export default function Home() {
   return (
     <div style={{ backgroundColor: "#021935" }}>
       <Header />
-      {/* <Navbar /> */}
       <div>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>

@@ -125,6 +125,9 @@ export default function Profile() {
                 </div>
               </div>
             </div>
+
+            {/* card contant */}
+
             <div
               style={{
                 marginLeft: "18.5%",

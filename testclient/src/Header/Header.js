@@ -16,6 +16,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 const User = localStorage.getItem("twittertoken");
 const Header = ({ history, isLogged }) => {
@@ -46,7 +47,7 @@ const Header = ({ history, isLogged }) => {
             onClick={() => history.push("/")}
           >
             <h3>
-              <span>I</span>
+              {/* <span>I</span>
               <span>D</span>
               <span>o</span>
               <span>s</span>
@@ -54,8 +55,8 @@ const Header = ({ history, isLogged }) => {
               <span>o</span>
               <span>v</span>
               <span>e</span>
-              <span>r</span>
-              {/* IDiscover */}
+              <span>r</span> */}
+              IDiscover
             </h3>
             <form onSubmit={Search}>
               {/* <TextField
@@ -116,9 +117,12 @@ const Header = ({ history, isLogged }) => {
               </button>
             )}
             {!User && (
-              <button className="button" onClick={handleClick}>
+              // <button className="button" onClick={handleClick}>
+              //   Login
+              // </button>
+              <Button onClick={handleClick} variant="contained" color="primary">
                 Login
-              </button>
+              </Button>
             )}
           </div>
         </Toolbar>
