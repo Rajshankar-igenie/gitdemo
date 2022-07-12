@@ -1,15 +1,17 @@
-/* nav {
+nav {
   height: 100%;
+  width: 100vh;
   background-color: #021935;
   border-bottom: 0.1vh solid grey;
   flex-direction: row;
   justify-content: center;
-} */
+}
 
 .css-10ltm04-MuiToolbar-root {
   display: flex;
   align-items: center !important;
   justify-content: space-around;
+  background-color: #030303;
 }
 
 .static {
@@ -38,7 +40,7 @@
 
 h3 {
   display: flex;
-  color: #030303;
+  color: #ffffff !important;
   margin-right: 2rem !important;
   margin-top: 15px !important;
 }

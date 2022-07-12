@@ -1,9 +1,13 @@
+.home {
+  height: 100vh;
+}
+
 div.item {
   vertical-align: top;
   display: inline-block;
   text-align: center;
   width: 120px;
-  transition: transform 0.2s;
+  /* transition: transform 0.3s; */
 }
 .caption {
   display: block;

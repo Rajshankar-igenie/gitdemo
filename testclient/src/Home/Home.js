@@ -17,6 +17,7 @@ import "./Home.css";
 import jwtDecode from "jwt-decode";
 import GlobalSearch from "../Search/GlobalSearch";
 import Navbar from "../Navbar/Navbar";
+
 const User = localStorage.getItem("twittertoken");
 export default function Home() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -76,9 +77,9 @@ export default function Home() {
     console.log(data);
   };
   return (
-    <div style={{ backgroundColor: "#021935" }}>
+    <div style={{ backgroundColor: "##01070f" }}>
       <Header />
-      <div>
+      <div className="home">
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Video Upload</Modal.Title>
@@ -107,11 +108,13 @@ export default function Home() {
           style={{
             marginLeft: "30%",
             marginTop: "30px",
+            padding: "5px",
             backgroundColor: "white",
-            width: "500px",
-            height: "150px",
+            width: "570px",
+            height: "130px",
             borderRadius: "10px",
             boxShadow: "inherit",
+            // overflow: "hidden",
           }}
         >
           <div
@@ -119,6 +122,7 @@ export default function Home() {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
+              marginTop: "1px",
             }}
           >
             <div className="item" style={{ cursor: "pointer" }}>
@@ -127,11 +131,11 @@ export default function Home() {
                 alt="cam"
                 style={{
                   marginLeft: "20px",
-                  width: "80px",
+                  width: "50px",
                   color: "white",
                   marginRight: "10px",
-                  marginTop: "30px",
-                  height: "80px",
+                  marginTop: "7px",
+                  height: "72px",
                 }}
               />
               <span
@@ -148,10 +152,10 @@ export default function Home() {
                 onClick={handleShow}
                 style={{
                   color: "white",
-                  height: "80px",
+                  height: "62px",
                   marginRight: "10px",
-                  width: "80px",
-                  marginTop: "30px",
+                  width: "50px",
+                  marginTop: "15px",
                 }}
               />
               <span style={{ marginRight: "13px" }} className="caption">
@@ -164,10 +168,10 @@ export default function Home() {
                 alt="video"
                 style={{
                   color: "white",
-                  height: "70px",
-                  width: "70px",
+                  height: "55px",
+                  width: "55px",
                   marginRight: "",
-                  marginTop: "30px",
+                  marginTop: "13px",
                 }}
               />
               <span
@@ -183,10 +187,10 @@ export default function Home() {
                 alt="video"
                 style={{
                   color: "white",
-                  height: "85px",
-                  width: "100px",
+                  height: "75px",
+                  width: "80px",
                   marginRight: "10px",
-                  marginTop: "30px",
+                  marginTop: "6px",
                 }}
               />
               <span style={{ marginRight: "13px" }} className="caption">
@@ -199,10 +203,10 @@ export default function Home() {
                 alt="video"
                 style={{
                   color: "white",
-                  height: "80px",
-                  width: "90px",
+                  height: "65px",
+                  width: "65px",
                   marginRight: "10px",
-                  marginTop: "30px",
+                  marginTop: "10px",
                 }}
               />
               <span style={{ marginRight: "13px" }} className="caption">

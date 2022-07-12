@@ -29,14 +29,18 @@ export default function Trending() {
       <Header />
 
       <div
+        className="trending-item"
         style={{
           width: "60%",
-          backgroundColor: "#021935",
+          // backgroundColor: "#021935",
+          backgroundColor: "##01070f",
+          // background-color: #01070f !important;
           height: "50px",
-          marginLeft: "5%",
+          marginLeft: "11%",
           marginTop: "3%",
           display: "flex",
-          borderBottom: "0.5px gray solid",
+          padding: "3px",
+          // borderBottom: "0.5px gray solid",
         }}
       >
         <h3
@@ -65,6 +69,7 @@ export default function Trending() {
             backgroundColor: "white",
             marginLeft: "5%",
             borderRadius: "12px",
+            padding: "5px",
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#Programming</p>
@@ -88,6 +93,7 @@ export default function Trending() {
             backgroundColor: "white",
             marginLeft: "4%",
             borderRadius: "12px",
+            padding: "5px",
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#Testing</p>
@@ -111,6 +117,7 @@ export default function Trending() {
             backgroundColor: "white",
             marginLeft: "4%",
             borderRadius: "12px",
+            padding: "5px",
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#Automation</p>
@@ -134,6 +141,7 @@ export default function Trending() {
             backgroundColor: "white",
             marginLeft: "4%",
             borderRadius: "12px",
+            padding: "5px",
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#MachineLearning</p>
@@ -157,6 +165,7 @@ export default function Trending() {
             backgroundColor: "white",
             marginLeft: "4%",
             borderRadius: "12px",
+            padding: "5px",
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#ComputerVision</p>
@@ -172,7 +181,7 @@ export default function Trending() {
           </button> */}
         </div>
 
-        <div
+        {/* <div
           style={{
             width: "300px",
             marginTop: "30px",
@@ -203,7 +212,7 @@ export default function Trending() {
               Follow
             </span>
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* card content */}
@@ -219,13 +228,20 @@ export default function Trending() {
           display: "flex",
         }}
       >
+        <img
+          className="profile-image"
+          title="karthi"
+          src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png"
+          style={{ marginTop: "20px", marginRight: "10px" }}
+          alt="sg"
+        />
         <Card sx={{ maxWidth: 400 }}>
           <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                K
-              </Avatar>
-            }
+            // avatar={
+            //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            //     K
+            //   </Avatar>
+            // }
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />
@@ -314,13 +330,21 @@ export default function Trending() {
           <p style={{ marginLeft: "10px" }}>#Home</p>
         </div> */}
 
+        <img
+          className="profile-image"
+          title="karthi"
+          src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png"
+          style={{ marginTop: "20px", marginRight: "10px" }}
+          alt="sg"
+        />
+
         <Card sx={{ maxWidth: 400, marginLeft: "15px" }}>
           <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                R
-              </Avatar>
-            }
+            // avatar={
+            //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            //     R
+            //   </Avatar>
+            // }
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />
@@ -353,13 +377,21 @@ export default function Trending() {
           </CardContent>
         </Card>
 
+        <img
+          className="profile-image"
+          title="karthi"
+          src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png"
+          style={{ marginTop: "20px", marginRight: "10px" }}
+          alt="sg"
+        />
+
         <Card sx={{ maxWidth: 400, marginLeft: "15px" }}>
           <CardHeader
-            avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                N
-              </Avatar>
-            }
+            // avatar={
+            //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            //     N
+            //   </Avatar>
+            // }
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />

@@ -10,10 +10,25 @@ import "./Profile.css";
 import ShareIcon from "@mui/icons-material/Share";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import CardActions from "@mui/material/CardActions";
+import Collapse from "@mui/material/Collapse";
+import Avatar from "@mui/material/Avatar";
+import IconButton, { IconButtonProps } from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import { red } from "@mui/material/colors";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+// import ShareIcon from "@mui/icons-material/Share";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+
 export default function Profile() {
   console.log("hi");
   return (
-    <div style={{ backgroundColor: "#021935", height: "1000px" }}>
+    <div style={{ backgroundColor: "#01070f", height: "1000px" }}>
       <Header className="header" />
       <div className="container">
         <div className="row">
@@ -127,7 +142,48 @@ export default function Profile() {
             </div>
 
             {/* card contant */}
+            <div className="card-container">
+              <img
+                className="profile-image"
+                title="karthi"
+                src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png"
+                style={{ marginTop: "20px", marginRight: "10px" }}
+                alt="sg"
+              />
 
+              <Card className="card" sx={{ maxWidth: 400 }}>
+                <CardHeader
+                  action={
+                    <IconButton aria-label="settings">
+                      <MoreVertIcon />
+                    </IconButton>
+                  }
+                  title="Karthi"
+                />
+
+                <CardContent>
+                  <img
+                    src="https://thumbs.dreamstime.com/b/conceptual-image-family-love-togetherness-safety-top-view-four-placing-hands-one-other-178302995.jpg"
+                    style={{ minWidth: "350px", minHeight: "300px" }}
+                    alt="new"
+                  />
+
+                  <CardActions disableSpacing>
+                    <IconButton aria-label="add to favorites">
+                      <FavoriteIcon />
+                    </IconButton>
+                    <IconButton aria-label="share">
+                      <ShareIcon />
+                    </IconButton>
+                  </CardActions>
+                  <Typography variant="body2" color="text.secondary">
+                    #Home
+                  </Typography>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* 
             <div
               style={{
                 marginLeft: "18.5%",
@@ -145,6 +201,7 @@ export default function Profile() {
                 style={{ marginTop: "20px", marginRight: "10px" }}
                 alt="sg"
               />
+
               <div
                 style={{
                   marginTop: "30px",
@@ -211,9 +268,10 @@ export default function Profile() {
                 </div>
                 <p style={{ marginLeft: "10px" }}>#Home</p>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div
+
+          {/* <div
             className="col-3"
             style={{
               marginTop: "30px",
@@ -254,9 +312,20 @@ export default function Profile() {
               Edit Profile{" "}
               <span style={{ float: "right", marginRight: "10px" }}>+</span>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   );
 }
+
+// <Card>
+// <CardHeader title="RajShankar" />
+// <CardContent>
+//   <img
+//     src="https://thumbs.dreamstime.com/b/conceptual-image-family-love-togetherness-safety-top-view-four-placing-hands-one-other-178302995.jpg"
+//     style={{ minWidth: "500px", minHeight: "300px" }}
+//     alt="new"
+//   />
+// </CardContent>
+// </Card>
