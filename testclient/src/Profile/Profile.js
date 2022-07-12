@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Header from "../Header/Header";
 import Blog from "../blogger-logo-icon-png-10157.png";
 import Chat from "../facebook-messenger-logo-png-44109.png";
@@ -26,7 +27,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 export default function Profile() {
-  console.log("hi");
+  // console.log("hi");
+  const [like, setLike] = useState(0);
+
+  // function Counter() {
+
+  //   return <div></div>;
+  // }
+
   return (
     <div style={{ backgroundColor: "#01070f", height: "1000px" }}>
       <Header className="header" />
@@ -38,13 +46,13 @@ export default function Profile() {
                 marginLeft: "30%",
                 marginTop: "30px",
                 backgroundColor: "white",
-                width: "500px",
-                height: "150px",
+                width: "570px",
+                height: "130px",
                 borderRadius: "10px",
                 boxShadow: "inherit",
               }}
             >
-              <div
+              {/* <div
                 style={{
                   display: "flex",
                   flexDirection: "row",
@@ -137,6 +145,103 @@ export default function Profile() {
                   <span style={{ marginRight: "13px" }} className="caption">
                     Chat
                   </span>
+                </div> */}
+
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  marginTop: "1px",
+                }}
+              >
+                <div className="item" style={{ cursor: "pointer" }}>
+                  <img
+                    src={Cam}
+                    alt="cam"
+                    style={{
+                      marginLeft: "20px",
+                      width: "50px",
+                      color: "white",
+                      marginRight: "10px",
+                      marginTop: "7px",
+                      height: "72px",
+                    }}
+                  />
+                  <span
+                    style={{ marginLeft: "20px", marginRight: "13px" }}
+                    className="caption"
+                  >
+                    Camera
+                  </span>
+                </div>
+                <div className="item" style={{ cursor: "pointer" }}>
+                  <img
+                    src={Vid}
+                    alt="video"
+                    // onClick={handleShow}
+                    style={{
+                      color: "white",
+                      height: "62px",
+                      marginRight: "10px",
+                      width: "50px",
+                      marginTop: "15px",
+                    }}
+                  />
+                  <span style={{ marginRight: "13px" }} className="caption">
+                    Videos
+                  </span>
+                </div>
+                <div className="item" style={{ cursor: "pointer" }}>
+                  <img
+                    src={Audio}
+                    alt="video"
+                    style={{
+                      color: "white",
+                      height: "52px",
+                      width: "52px",
+                      marginRight: "",
+                      marginTop: "18px",
+                    }}
+                  />
+                  <span
+                    style={{ marginRight: "", marginTop: "9px" }}
+                    className="caption"
+                  >
+                    Audio
+                  </span>
+                </div>
+                <div className="item" style={{ cursor: "pointer" }}>
+                  <img
+                    src={Blog}
+                    alt="video"
+                    style={{
+                      color: "white",
+                      height: "75px",
+                      width: "80px",
+                      marginRight: "10px",
+                      marginTop: "6px",
+                    }}
+                  />
+                  <span style={{ marginRight: "13px" }} className="caption">
+                    Blog
+                  </span>
+                </div>
+                <div className="item" style={{ cursor: "pointer" }}>
+                  <img
+                    src={Chat}
+                    alt="video"
+                    style={{
+                      color: "white",
+                      height: "65px",
+                      width: "65px",
+                      marginRight: "10px",
+                      marginTop: "10px",
+                    }}
+                  />
+                  <span style={{ marginRight: "13px" }} className="caption">
+                    Chat
+                  </span>
                 </div>
               </div>
             </div>
@@ -151,7 +256,7 @@ export default function Profile() {
                 alt="sg"
               />
 
-              <Card className="card" sx={{ maxWidth: 400 }}>
+              <Card className="card" sx={{ maxWidth: 450 }}>
                 <CardHeader
                   action={
                     <IconButton aria-label="settings">
@@ -163,14 +268,21 @@ export default function Profile() {
 
                 <CardContent>
                   <img
-                    src="https://thumbs.dreamstime.com/b/conceptual-image-family-love-togetherness-safety-top-view-four-placing-hands-one-other-178302995.jpg"
+                    src="https://www.lib.cam.ac.uk/files/styles/leading/public/idiscoverbanner.jpg?itok=JT5d80V0"
                     style={{ minWidth: "350px", minHeight: "300px" }}
                     alt="new"
                   />
 
                   <CardActions disableSpacing>
                     <IconButton aria-label="add to favorites">
-                      <FavoriteIcon />
+                      <button
+                        onClick={() => {
+                          setLike(like + 1);
+                          console.log(like);
+                        }}
+                      >
+                        {like}
+                      </button>
                     </IconButton>
                     <IconButton aria-label="share">
                       <ShareIcon />

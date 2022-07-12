@@ -32,3 +32,15 @@
   border-color: black !important;
   cursor: default;
 }
+
+.trending-title {
+  padding: 5px !important;
+  margin-bottom: 20px !important;
+  margin-right: 40rem !important;
+}
+
+.trending-button {
+  background-color: white !important;
+  color: #01070f !important;
+  font-size: 13px !important;
+}

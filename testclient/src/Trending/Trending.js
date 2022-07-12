@@ -21,6 +21,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 // import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+import LikeCounter from "../LikeCounter/LikeCounter";
 
 import "./trending.css";
 export default function Trending() {
@@ -43,16 +44,19 @@ export default function Trending() {
           // borderBottom: "0.5px gray solid",
         }}
       >
-        <h3
-          style={{
-            marginRight: "20px",
-            marginTop: "10px",
-            marginLeft: "10px",
-            color: "white",
-          }}
-        >
-          Trending
-        </h3>
+        <div className="trending-title">
+          <h3
+            style={{
+              marginRight: "20px",
+              marginTop: "10px",
+              marginLeft: "10px",
+              color: "white",
+            }}
+          >
+            Trending
+          </h3>
+        </div>
+
         {/*   <h3 style={{marginRight:"20px",marginTop:"10px"}}>For You</h3> */}
       </div>
 
@@ -73,7 +77,13 @@ export default function Trending() {
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#Programming</p>
-          <Button variant="contained">Follow</Button>
+          <Button
+            className="trending-button"
+            variant="contained"
+            backgroundColor="#21b6ae"
+          >
+            Follow
+          </Button>
           {/* <button
             style={{
               backgroundColor: "lightblue",
@@ -97,7 +107,9 @@ export default function Trending() {
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#Testing</p>
-          <Button variant="contained">Follow</Button>
+          <Button className="trending-button" variant="contained">
+            Follow
+          </Button>
           {/* <button
             style={{
               backgroundColor: "lightblue",
@@ -121,7 +133,9 @@ export default function Trending() {
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#Automation</p>
-          <Button variant="contained">Follow</Button>
+          <Button className="trending-button" variant="contained">
+            Follow
+          </Button>
           {/* <button
             style={{
               backgroundColor: "lightblue",
@@ -145,7 +159,9 @@ export default function Trending() {
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#MachineLearning</p>
-          <Button variant="contained">Follow</Button>
+          <Button className="trending-button" variant="contained">
+            Follow
+          </Button>
           {/* <button
             style={{
               backgroundColor: "lightblue",
@@ -169,7 +185,9 @@ export default function Trending() {
           }}
         >
           <p style={{ marginLeft: "10px", color: "white" }}>#ComputerVision</p>
-          <Button variant="contained">Follow</Button>
+          <Button className="trending-button" variant="contained">
+            Follow
+          </Button>
           {/* <button
             style={{
               backgroundColor: "lightblue",
@@ -228,20 +246,20 @@ export default function Trending() {
           display: "flex",
         }}
       >
-        <img
+        {/* <img
           className="profile-image"
           title="karthi"
           src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png"
           style={{ marginTop: "20px", marginRight: "10px" }}
           alt="sg"
-        />
+        /> */}
         <Card sx={{ maxWidth: 400 }}>
           <CardHeader
-            // avatar={
-            //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            //     K
-            //   </Avatar>
-            // }
+            avatar={
+              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                K
+              </Avatar>
+            }
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />
@@ -259,7 +277,8 @@ export default function Trending() {
 
             <CardActions disableSpacing>
               <IconButton aria-label="add to favorites">
-                <FavoriteIcon />
+                {/* <FavoriteIcon /> */}
+                <LikeCounter />
               </IconButton>
               <IconButton aria-label="share">
                 <ShareIcon />
@@ -330,21 +349,21 @@ export default function Trending() {
           <p style={{ marginLeft: "10px" }}>#Home</p>
         </div> */}
 
-        <img
+        {/* <img
           className="profile-image"
           title="karthi"
           src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png"
           style={{ marginTop: "20px", marginRight: "10px" }}
           alt="sg"
-        />
+        /> */}
 
         <Card sx={{ maxWidth: 400, marginLeft: "15px" }}>
           <CardHeader
-            // avatar={
-            //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            //     R
-            //   </Avatar>
-            // }
+            avatar={
+              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                R
+              </Avatar>
+            }
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />
@@ -365,7 +384,8 @@ export default function Trending() {
 
             <CardActions disableSpacing>
               <IconButton aria-label="add to favorites">
-                <FavoriteIcon />
+                {/* <FavoriteIcon /> */}
+                <LikeCounter />
               </IconButton>
               <IconButton aria-label="share">
                 <ShareIcon />
@@ -377,21 +397,21 @@ export default function Trending() {
           </CardContent>
         </Card>
 
-        <img
+        {/* <img
           className="profile-image"
           title="karthi"
           src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-512.png"
           style={{ marginTop: "20px", marginRight: "10px" }}
           alt="sg"
-        />
+        /> */}
 
         <Card sx={{ maxWidth: 400, marginLeft: "15px" }}>
           <CardHeader
-            // avatar={
-            //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            //     N
-            //   </Avatar>
-            // }
+            avatar={
+              <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+                N
+              </Avatar>
+            }
             action={
               <IconButton aria-label="settings">
                 <MoreVertIcon />
@@ -412,7 +432,8 @@ export default function Trending() {
 
             <CardActions disableSpacing>
               <IconButton aria-label="add to favorites">
-                <FavoriteIcon />
+                {/* <FavoriteIcon /> */}
+                <LikeCounter />
               </IconButton>
               <IconButton aria-label="share">
                 <ShareIcon />
